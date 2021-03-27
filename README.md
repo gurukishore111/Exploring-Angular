@@ -25,7 +25,7 @@
 ### 3.http-app 
 #### Service,HTTP,Input & Output
 1. Services
-2. Observables -async 
+2. Observables - async 
 3. GET request
 4. POST request
 5. Event Emitter Output
