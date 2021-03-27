@@ -23,7 +23,7 @@
 5. Template Driven Forms - Submission 
 
 ### 3.http-app 
-#### Service,HTTP,Input & Output
+#### Service, HTTP ,Input & Output
 1. Services
 2. Observables - async 
 3. GET request
