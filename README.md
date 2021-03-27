@@ -21,3 +21,14 @@
 4. ngModel 2 way Data Binding
 5. Template Driven Forms - Validation
 5. Template Driven Forms - Submission 
+
+### 3.http-app 
+#### Service, HTTP, Input & Output
+1. Services
+2. Observables - async 
+3. GET request
+4. POST request
+5. Event Emitter Output
+6. Input Edit State
+7. PUT request
+8. DELETE request
