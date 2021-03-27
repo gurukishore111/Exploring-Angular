@@ -1,0 +1,62 @@
+<!-- ngFor -->
+<div class="container">
+  <h2>User</h2>
+  <button
+    [disabled]="!enabledAdd"
+    [ngClass]="currentClasess"
+    class="btn btn-light btn-block mb-3"
+  >
+    Add new user
+  </button>
+  <div *ngIf="!loading && users?.length > 0; else nouser">
+    <ul
+      class="list-unstyled card card-body mb-2"
+      *ngFor="let user of users"
+      [style.border-color]="user.isActive ? 'green' : ''"
+      [class.bg-secondary]="user.isActive"
+    >
+      <div class="row">
+        <div class="col-sm-4">
+          <!-- <img *ngIf="user.image" class="img-fluid" [src]="user.image" alt="" /> -->
+          <img
+            *ngIf="user.image"
+            class="img-fluid"
+            src="{{ user.image }}"
+            alt=""
+          />
+        </div>
+        <div class="col-sm-8">
+          <h3 [ngStyle]="currentStyles">
+            <!-- Pipes -->
+            Name: {{ user.firstName | uppercase }}
+            {{ user.lastName | uppercase }}
+          </h3>
+          <ul
+            class="list-group"
+            *ngIf="showExtends && user.age && user.address"
+          >
+            <li class="list-group-item">Age: {{ user.age }}</li>
+            <li class="list-group-item">
+              Address: {{ user.address.city }} {{ user.address.street }}
+              {{ user.address.state }}
+            </li>
+            <li class="list-group-item">
+              Balance: {{ user.balance | currency: "INR" }}
+            </li>
+            <li class="list-group-item">
+              Joined Date: {{ user.registerd | date }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ul>
+  </div>
+
+  <h4 *ngIf="users?.length === 0">No users Found</h4>
+
+  <ng-template #nouser>
+    <h4>Loading User</h4>
+  </ng-template>
+</div>
+
+<!-- <h4 *ngIf="users.length == 0">No user in there</h4> -->
