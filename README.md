@@ -32,3 +32,10 @@
 6. Input Edit State
 7. PUT request
 8. DELETE request
+
+### 4.router-app
+#### Angular router
+1. Routing Module
+2. Linking to routes
+3. Params Activated Route
+4. Not Found Component
