@@ -43,5 +43,5 @@
 ### 5.Dev Logger
 #### Put all concepts together
 
-### 6.router-app
+### 6.ClientPanel
 #### Angular + firebase
