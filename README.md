@@ -39,3 +39,9 @@
 2. Linking to routes
 3. Params Activated Route
 4. Not Found Component
+
+### 5.Dev Logger
+#### Put all concepts together
+
+### 6.router-app
+#### Angular + firebase
