@@ -41,7 +41,7 @@
 4. Not Found Component
 
 ### 5.Dev Logger
-#### Put all concepts together
+#### Put all concepts together into project
 
 ### 6.ClientPanel
-#### Angular + firebase
+#### Angular + firebase project
